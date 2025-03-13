@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Boutique</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>La Boutique</h1>
+      <nav>
+        <ul>
+          <li><a href="#">login</a></li>
+          <li><a href="#">compras</a></li>
+          <li><a href="#">favoritos</a></li>
+          <li>
+            <a href="#"
+              ><span class="material-symbols-outlined"> shopping_cart </span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div id="products" class="products-container"></div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="date"></span> La Boutique. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+
+    <script src="/assets/scripts/main.js"></script>
+    <script src="/assets/scripts/api.js"></script>
+  </body>
+</html>
