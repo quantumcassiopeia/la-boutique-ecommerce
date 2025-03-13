@@ -44,7 +44,6 @@ body {
 header,
 footer {
   padding: 16px;
-
   font-family: var(--font-heading);
 }
 
@@ -64,7 +63,7 @@ a {
 footer {
   justify-content: center;
   margin-top: auto;
-  min-height: 36px;
+  min-height: 2.25rem;
   color: var(--primary-text-color);
 
   background-color: var(--primary-color);
