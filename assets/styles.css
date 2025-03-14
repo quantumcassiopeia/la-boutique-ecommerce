@@ -20,7 +20,8 @@
 
 header,
 footer,
-ul {
+ul,
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,6 +55,7 @@ body {
 
 ul {
   gap: 20px;
+  position: relative;
 }
 
 li {
@@ -80,6 +82,16 @@ footer {
 }
 
 /* Classes e IDs*/
+
+.hamburger_menu {
+  display: none;
+  cursor: pointer;
+}
+
+.shopping_cart {
+  padding-left: 1.125rem;
+  cursor: pointer;
+}
 
 .container {
   display: flex;
@@ -169,5 +181,21 @@ footer {
 
   &:hover {
     background-color: var(--secondary-text-color);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    ul {
+      display: none;
+    }
+  }
+
+  .hamburger_menu {
+    display: block;
+  }
+
+  .shopping_cart {
+    padding-left: 0;
   }
 }
