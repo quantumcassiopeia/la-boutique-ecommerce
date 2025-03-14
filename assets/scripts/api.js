@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const prevPageButton = document.getElementById("prevPage");
   const nextPageButton = document.getElementById("nextPage");
   const pageInfo = document.getElementById("pageInfo");
-  const totalProductsElement = document.getElementById("totalProducts"); // Referência ao elemento que vai exibir o total de produtos
+  const totalProductsElement = document.getElementById("totalProducts");
 
   let allProducts = [];
   let currentPage = 1;
@@ -62,10 +62,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (allProducts.length === 0) {
         productsContainer.innerHTML = "<p>Não há produtos disponíveis.</p>";
-        totalProductsElement.textContent = "Total de produtos: 0"; // Exibe total de produtos (0)
+        totalProductsElement.textContent = "Total de produtos: 0";
       } else {
         updateProductDisplay();
-        totalProductsElement.textContent = `Total de produtos: ${allProducts.length}`; // Exibe total de produtos
+        totalProductsElement.textContent = `Total de produtos: ${allProducts.length}`;
       }
     } catch (error) {
       console.error("Erro ao buscar os produtos:", error);
